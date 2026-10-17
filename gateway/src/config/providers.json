@@ -1,0 +1,31 @@
+{
+  "_pricesCheckedOn": "2026-10-10",
+  "_usdToInrRate": 95,
+  "_priceSource": "ai.google.dev/gemini-api/docs/pricing, standard paid tier, valid through 2026-12-31",
+  "providers": {
+    "mock": {
+      "baseUrlEnv": "MOCK_LLM_URL",
+      "apiKeyEnv": null,
+      "models": {
+        "mock-model": {
+          "inputPerMillionINR": 20000,
+          "outputPerMillionINR": 40000
+        }
+      }
+    },
+    "gemini": {
+      "baseUrlEnv": "GEMINI_BASE_URL",
+      "apiKeyEnv": "GEMINI_API_KEY",
+      "models": {
+        "gemini-3.8-flash": {
+          "inputPerMillionINR": 66,
+          "outputPerMillionINR": 330
+        },
+        "gemini-3.5-flash-lite": {
+          "inputPerMillionINR": 66,
+          "outputPerMillionINR": 330
+        }
+      }
+    }
+  }
+}
